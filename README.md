@@ -1,2 +1,5 @@
-# MERN-Emergency-Blood-Donation
-🚑 Emergency Blood Donation - Life-Saving Blood Network 🩸  A MERN stack web app connecting blood donors with those in urgent need. Features real-time donation requests, donor registration, location-based searches, live availability tracking, and instant alerts, ensuring a faster, streamlined emergency blood donation process.
+# AI-Powered-Emergency-Blood-Donation-Platform-MERN-AI
+
+🚑 AI-Powered Emergency Blood Donation Platform (MERN + AI) 🩸
+
+This Emergency Blood Donation platform integrates AI-powered matchmaking to connect blood donors with patients efficiently. It uses Machine Learning to predict donor availability, recommend optimal matches, and enhance the blood donation network’s responsiveness.
