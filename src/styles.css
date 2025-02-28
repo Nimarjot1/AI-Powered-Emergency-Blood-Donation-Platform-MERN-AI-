@@ -1,0 +1,280 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+  }
+  
+  .app {
+    min-height: 100vh;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #ff4d4d;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .navbar-title {
+    font-size: 1.8rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  .logout-btn {
+    background: #fff;
+    color: #ff4d4d;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .logout-btn:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Login */
+  .login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 60px);
+  }
+  
+  .login-form {
+    background: #2e2e2e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease;
+  }
+  
+  .login-form h2 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  .login-form input {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+  }
+  
+  .login-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .login-form button:hover {
+    background: #e63939;
+  }
+  
+  /* Home */
+  .home {
+    padding: 2rem;
+  }
+  
+  .home-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2.5rem;
+    animation: fadeIn 1s ease-in;
+  }
+  
+  /* Donor Form */
+  .donor-form {
+    background: #2e2e2e;
+    padding: 2rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease;
+  }
+  
+  .donor-form h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .donor-form input {
+    display: block;
+    width: 100%;
+    padding: 0.8rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+  }
+  
+  .donor-form button {
+    width: 100%;
+    padding: 0.8rem;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .donor-form button:hover {
+    background: #e63939;
+  }
+  
+  /* Donor List */
+  .donor-list {
+    background: #2e2e2e;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideUp 0.5s ease;
+  }
+  
+  .donor-list h2 {
+    margin-bottom: 1.5rem;
+  }
+  
+  .donor-card {
+    background: #444;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+  }
+  
+  .donor-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .donor-card button {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .donor-card button:hover {
+    background: #e63939;
+  }
+  
+  /* Chatbot */
+  .chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+  }
+  
+  .chatbot-toggle {
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  .chatbot-toggle:hover {
+    transform: scale(1.1);
+  }
+  
+  .chatbot.open .chatbot-content {
+    display: block;
+  }
+  
+  .chatbot-content {
+    display: none;
+    background: #2e2e2e;
+    padding: 1rem;
+    border-radius: 10px;
+    width: 300px;
+    max-height: 400px;
+    overflow-y: auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+    animation: slideIn 0.3s ease;
+  }
+  
+  .chatbot-messages {
+    margin-bottom: 1rem;
+  }
+  
+  .chatbot-content input {
+    width: 70%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 5px;
+    background: #444;
+    color: #fff;
+  }
+  
+  .chatbot-content button {
+    width: 25%;
+    padding: 0.5rem;
+    background: #ff4d4d;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 5%;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateX(20px);
+      opacity: 0;
+    }
+    to {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
