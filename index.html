@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BloodSync - Emergency Blood Donation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1 class="navbar-title">🚑 BloodSync</h1>
+        <button class="logout-btn" onclick="logout()">Logout</button>
+    </nav>
+
+    <main class="container">
+        <h1 class="main-title">Save Lives, Step Up</h1>
+
+        <section class="donor-form">
+            <h2 class="section-title">Be a Lifesaver</h2>
+            <form id="donorForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="bloodType" placeholder="Blood Type (e.g., A+)" required>
+                <input type="text" id="location" placeholder="Location" required>
+                <button type="submit">Add Donor</button>
+            </form>
+        </section>
+
+        <section class="donor-list">
+            <h2 class="section-title">Heroes on Standby</h2>
+            <div id="donorList"></div>
+        </section>
+    </main>
+
+    <div class="chatbot">
+        <button class="chatbot-toggle">💬</button>
+        <div class="chatbot-content">
+            <div class="chatbot-messages" id="chatMessages"></div>
+            <div class="chatbot-input">
+                <input type="text" id="chatInput" placeholder="Ask me anything...">
+                <button onclick="sendMessage()">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/api.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
