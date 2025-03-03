@@ -1,0 +1,368 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #000, #1a1a1a);
+    color: #fff;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+/* Navbar */
+.navbar {
+    background: #111;
+    padding: 1.5rem 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    animation: swooshIn 0.8s ease-out;
+}
+
+.navbar-title {
+    font-size: 2.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    transition: transform 0.3s ease;
+}
+
+.navbar-title:hover {
+    transform: scale(1.05);
+}
+
+.logout-btn {
+    background: #fff;
+    color: #000;
+    border: none;
+    padding: 0.7rem 2rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.logout-btn:hover {
+    background: #ff1a1a;
+    color: #fff;
+    transform: translateX(10px);
+}
+
+/* Login */
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 3rem;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 450px;
+    animation: dropIn 1s ease-out;
+}
+
+.login-title {
+    font-size: 2.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.login-form input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: none;
+    border-radius: 50px;
+    background: #222;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.login-form input:focus {
+    outline: none;
+    background: #333;
+    transform: scale(1.02);
+}
+
+.login-form button {
+    width: 100%;
+    padding: 1rem;
+    background: #ff1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.login-form button:hover {
+    background: #fff;
+    color: #ff1a1a;
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Main Content */
+.container {
+    padding: 8rem 3rem 3rem;
+}
+
+.main-title {
+    font-size: 4rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    text-align: center;
+    margin-bottom: 4rem;
+    animation: swooshIn 1s ease-out;
+}
+
+/* Donor Form */
+.donor-form {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2.5rem;
+    border-radius: 20px;
+    margin-bottom: 4rem;
+    animation: slideInLeft 0.8s ease-out;
+}
+
+.section-title {
+    font-size: 2.2rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: #ff1a1a;
+    margin-bottom: 2rem;
+}
+
+.donor-form input {
+    width: 100%;
+    padding: 1rem;
+    margin: 0.8rem 0;
+    border: none;
+    border-radius: 50px;
+    background: #222;
+    color: #fff;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.donor-form input:focus {
+    outline: none;
+    background: #333;
+    transform: scale(1.02);
+}
+
+.donor-form button {
+    width: 100%;
+    padding: 1rem;
+    background: #ff1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.donor-form button:hover {
+    background: #fff;
+    color: #ff1a1a;
+    transform: scale(1.05) rotate(2deg);
+}
+
+/* Donor List */
+.donor-list {
+    padding: 2.5rem;
+    border-radius: 20px;
+    animation: slideInRight 0.8s ease-out;
+}
+
+.donor-list .card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin: 1rem 0;
+    border-radius: 15px;
+    transition: all 0.4s ease;
+    animation: swooshUp 0.6s ease-out;
+}
+
+.donor-list .card:hover {
+    transform: scale(1.03) translateY(-10px);
+    background: rgba(255, 26, 26, 0.1);
+}
+
+.donor-list .card p {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+}
+
+.donor-list .card span {
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.donor-list .card button {
+    background: #ff1a1a;
+    color: #fff;
+    border: none;
+    padding: 0.7rem 1.5rem;
+    border-radius: 50px;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.donor-list .card button:hover {
+    background: #fff;
+    color: #ff1a1a;
+    transform: translateX(5px);
+}
+
+/* Chatbot */
+.chatbot {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    z-index: 1000;
+}
+
+.chatbot-toggle {
+    background: #ff1a1a;
+    color: #fff;
+    border: none;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    animation: pulse 1.5s infinite;
+}
+
+.chatbot-toggle:hover {
+    transform: scale(1.1) rotate(360deg);
+    background: #fff;
+    color: #ff1a1a;
+}
+
+.chatbot-content {
+    display: none;
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 20px;
+    width: 350px;
+    max-height: 500px;
+    overflow-y: auto;
+    animation: swooshIn 0.5s ease-out;
+}
+
+.chatbot.active .chatbot-content {
+    display: block;
+}
+
+.chatbot-messages {
+    margin-bottom: 1.5rem;
+}
+
+.chatbot-messages p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+.chatbot-messages .user {
+    text-align: right;
+    color: #ff4d4d;
+    font-weight: bold;
+}
+
+.chatbot-messages .bot {
+    text-align: left;
+    color: #ccc;
+}
+
+.chatbot-input {
+    display: flex;
+    gap: 10px;
+}
+
+.chatbot-input input {
+    flex: 1;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 50px;
+    background: #222;
+    color: #fff;
+    font-size: 1rem;
+}
+
+.chatbot-input button {
+    padding: 0.8rem 1.5rem;
+    background: #ff1a1a;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 0.4s ease;
+}
+
+.chatbot-input button:hover {
+    background: #fff;
+    color: #ff1a1a;
+}
+
+/* Animations */
+@keyframes swooshIn {
+    from { transform: translateX(-100vw); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes swooshUp {
+    from { transform: translateY(100px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+@keyframes dropIn {
+    from { transform: translateY(-100vh) scale(0.5); opacity: 0; }
+    to { transform: translateY(0) scale(1); opacity: 1; }
+}
+
+@keyframes slideInLeft {
+    from { transform: translateX(-100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideInRight {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 26, 26, 0.7); }
+    70% { transform: scale(1.05); box-shadow: 0 0 0 20px rgba(255, 26, 26, 0); }
+    100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(255, 26, 26, 0); }
+}
