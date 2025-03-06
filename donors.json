@@ -1,0 +1,32 @@
+[
+  {
+    "userId": 1,
+    "name": "Kanika Updated",
+    "bloodType": "O+",
+    "location": "Bangalore"
+  },
+  {
+    "userId": 2,
+    "name": "Nimar",
+    "bloodType": "B+",
+    "location": "punjab"
+  },
+  {
+    "userId": 3,
+    "name": "Khushi",
+    "bloodType": "A+",
+    "location": "punjab"
+  },
+  {
+    "userId": 4,
+    "name": "Lakshay",
+    "bloodType": "O+",
+    "location": "punjab"
+  },
+  {
+    "userId": 5,
+    "name": "mridul",
+    "bloodType": "AB+",
+    "location": "fd"
+  }
+]
